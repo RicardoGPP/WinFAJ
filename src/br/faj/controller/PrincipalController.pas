@@ -11,17 +11,11 @@ type TPrincipalController = class
     property arquivo: TArquivo read pArquivo write pArquivo;
     constructor Create;
     destructor Free;
-
     procedure buscarArquivo;
     procedure removerArquivo;
-
     function salvarArquivo(conteudo: String): Boolean;
     function compactar: Boolean;
     function descompactar: Boolean;
-
-
-
-
 end;
 
 implementation

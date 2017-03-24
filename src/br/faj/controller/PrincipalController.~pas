@@ -208,9 +208,7 @@ begin
           //Descompacta
           conteudo:= compressao.descompactar(Self.pArquivo);
           //Salva arquivo
-          salvarArquivo(conteudo);
-          //Altera variável de controle
-          sucesso:= True;
+          sucesso:= salvarArquivo(conteudo);
         end;
     except on e: Exception do
       begin
